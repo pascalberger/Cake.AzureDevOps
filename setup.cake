@@ -19,7 +19,7 @@ BuildParameters.PrintParameters(Context);
 ToolSettings.SetToolSettings(
     context: Context,
     dupFinderExcludePattern: new string[] { BuildParameters.RootDirectoryPath + "/src/Cake.Tfs.Tests/**/*.cs" },
-    testCoverageFilter: "+[*]* -[xunit.*]* -[Cake.Core]* -[*.Tests]* -[Shouldly]*",
+    testCoverageFilter: "+[*]* -[xunit.*]* -[Cake.Core]* -[*.Tests]* -[Shouldly]* -[TfsUrlParser]* ",
     testCoverageExcludeByAttribute: "*.ExcludeFromCodeCoverage*",
     testCoverageExcludeByFile: "*/*Designer.cs;*/*.g.cs;*/*.g.i.cs");
 
